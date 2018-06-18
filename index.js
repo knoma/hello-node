@@ -3,8 +3,8 @@ var os = require('os');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World from ' + os.hostname());
+  res.send('Hello master from ' + os.hostname());
 });
 app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+  console.log('app listening on port 8080!');
 });
